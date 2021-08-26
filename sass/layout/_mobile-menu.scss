@@ -15,6 +15,11 @@
     fill: var(--accent-color);
   }
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .mobile-menu {
   position: fixed;
   overflow: auto;
@@ -23,7 +28,7 @@
   top: 0;
   left: 0;
   background-color: #ffffff;
-
+  z-index: 2;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

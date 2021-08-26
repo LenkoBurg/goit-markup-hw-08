@@ -23,16 +23,24 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   border-radius: 4px;
   background-color: var(--primary-bacground-color);
 }
-
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: relative;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    border-radius: 4px;
+    background-color: var(--primary-bacground-color);
+  }
+}
 .close-button {
   position: absolute;
   top: 10px;
@@ -157,6 +165,8 @@
 .modal-checkbox-label {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .modal-checkbox:checked + .modal-checkbox-label::before {
   background-image: url(../images/icon-check-1.svg);

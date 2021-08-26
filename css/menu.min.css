@@ -1,2 +1,2 @@
-.menu{display:none}@media screen and (min-width: 1200px){.menu{display:flex;margin-top:0px;margin-bottom:0px;padding-left:0px;justify-content:center;margin-left:93px;align-items:center}}
+.menu{display:none}@media screen and (min-width: 768px){.menu{display:flex;margin-top:0px;margin-bottom:0px;padding-left:0px;justify-content:center;margin-left:88px;align-items:center}}@media screen and (min-width: 1200px){.menu{display:flex;margin-top:0px;margin-bottom:0px;padding-left:0px;justify-content:center;margin-left:93px;align-items:center}}
 /*# sourceMappingURL=menu.min.css.map */

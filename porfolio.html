@@ -18,17 +18,21 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
  <link rel="stylesheet" href="./css/main.min.css">
     <body class="body">
-    <!-- <header class="header-box">
+    <header class="header-box">
         <div class="container flex">
             <nav class="flex"><a href="" class="logo" lang="en">
                     <span class="web">Web</span>Studio</a>
                 <ul class="menu">
-                    <li class="menu__listp"><a href="./index.html" class="menu__linkp">Студия</a></li>
-                    <li class="menu__list-main"><a href="./porfolio.html" class="menu__linkp-main currents"> Портфолио</a></li>
-                    <li class="menu__listp"> <a href="" class="menu__linkp"> Контакты</a></li>
+                    <li class="menu__list-main"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="menu__list"><a href="./porfolio.html" class="menu__link-main currents"> Портфолио</a></li>
+                    <li class="menu__list"> <a href="" class="link"> Контакты</a></li>
                 </ul>
             </nav>
-    
+            <button type="button" class="mob-menu" data-menu-open>
+                <svg width="40px" height="40px" class="mob-menu__icon">
+                    <use href="./images/icons/sprite2.svg#mob-menu"></use>
+                </svg>
+            </button>
             <ul class="menu-contact">
                 <li class="menu-contact__list-left">
                     <a href="" class="menu-contact__link">
@@ -41,11 +45,51 @@
                         <svg class="header-icon" width="10" height="16">
                             <use href="./images/icons/sprite.svg#icon-smartphone"></use>
                         </svg>
-                        +38 096 111 11 11</a></li>
+                        +38 096 111 11 111</a></li>
     
             </ul>
         </div>
-    </header> -->
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="close-butt" data-menu-close>
+                    <svg width="40px" height="40px" class="mobile-menu__close-icon">
+                        <use href="./images/icons/sprite2.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+    
+                <ul class="mobile-menu__nav">
+                    <li class="mobile-menu__list">
+                        <a href="" class="mobile-menu__link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__list">
+                        <a href="" class="mobile-menu__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__list">
+                        <a href="" class="mobile-menu__link">Контакты</a>
+                    </li>
+                </ul>
+    
+                <ul class="mobile-menu__contact">
+                    <li class="mobile-menu__numb">+38 096 111 11 11</li>
+                    <li class="mobile-menu__mail">info@devstudio.com</li>
+                </ul>
+                <ul class="mobile__menu-social">
+                    <li class="mobile-menu__soc-list">
+                        <a href="" class="mobile-menu__soc-link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__soc-list">
+                        <a href="" class="mobile-menu__soc-link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__soc-list">
+                        <a href="" class="mobile-menu__soc-link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__soc-list">
+                        <a href="" class="mobile-menu__soc-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
  <main>
      <!-- =================HERO===================== -->
      <section class="section portfolio-nav">
@@ -283,6 +327,6 @@ card__description">Веб-сайт</p> </div></a></li>
             </div>
         </div>
     </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 </html>

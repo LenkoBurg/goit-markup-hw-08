@@ -1,6 +1,11 @@
 .menu-contact {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .menu-contact {
+    display: block;
+  }
+}
 @media screen and (min-width: 1200px) {
   .menu-contact {
     display: flex;
@@ -13,34 +18,67 @@
     }
   }
 }
-.menu-contact__link {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  list-style: none;
-  color: var(--primary-text-color);
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .menu-contact__link {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
 
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover .header-icon,
-  &:focus .header-icon {
-    fill: var(--accent-color);
-  }
-  &:hover {
-    color: var(--accent-color);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .header-icon,
+    &:focus .header-icon {
+      fill: var(--accent-color);
+    }
+    &:hover {
+      color: var(--accent-color);
+    }
   }
 }
-.menu-contact__list-left {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-  &:hover .header-icon,
-  &:focus .header-icon {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+@media screen and (min-width: 1200px) {
+  .menu-contact__link {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .header-icon,
+    &:focus .header-icon {
+      fill: var(--accent-color);
+    }
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-contact__list-left {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-contact__list-left {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    &:hover .header-icon,
+    &:focus .header-icon {
+      color: var(--accent-color);
+      fill: var(--accent-color);
+    }
   }
 }
