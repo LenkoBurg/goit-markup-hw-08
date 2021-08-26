@@ -1,10 +1,25 @@
 .btns {
   display: flex;
-  justify-content: center;
-  padding-left: 0px;
-  margin: 0px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }
-.btns-list + .btns-list {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .btns {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btns {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+  }
+}
+.btns-list {
+  margin-right: 9px;
+  margin-bottom: 15px;
 }

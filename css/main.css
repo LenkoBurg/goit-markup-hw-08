@@ -46,8 +46,7 @@ p {
 }
 
 .h1 h2 h3 h4 h5 h6 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 .container {
@@ -912,14 +911,31 @@ p {
 
 .btns {
   display: flex;
-  justify-content: center;
-  padding-left: 0px;
-  margin: 0px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }
 
-.btns-list + .btns-list {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .btns {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btns {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+.btns-list {
+  margin-right: 9px;
+  margin-bottom: 15px;
 }
 
 .button-port {
@@ -945,23 +961,28 @@ p {
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 0px;
   padding: 0%;
 }
 
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .card__list {
-  box-sizing: border-box;
-  min-width: 370px;
-}
-
-.card__list:not(:nth-last-child(3n + 1)) {
-  margin-right: 30px;
-}
-
-.card__list:not(:nth-last-child(-n + 3)) {
+  width: 100%;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__list {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .card__link {
@@ -983,19 +1004,30 @@ p {
 .card__wrapper {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 .card__overlay {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 28px;
   top: 0;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--secondary-text-color);
   transform: translatey(110%);
   transition: transform 250ms ease;
-  padding: 63px 24px;
+  padding: 77px 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .card_overlay {
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+  }
 }
 
 .card__describe {
@@ -1005,15 +1037,29 @@ p {
   border-right: 1px solid #eeeeee;
 }
 
+@media screen and (min-width: 767px) {
+  .cool {
+    height: 146px;
+  }
+}
+
 .card__sup-title {
   margin-bottom: 4px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   color: var(--primary-heading-color);
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .card__sup-title {
+    width: 306px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .card__description {
