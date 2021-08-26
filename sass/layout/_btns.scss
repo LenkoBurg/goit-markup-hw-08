@@ -1,0 +1,10 @@
+.btns {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+.btns-list + .btns-list {
+  margin-left: 8px;
+}

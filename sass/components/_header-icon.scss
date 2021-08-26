@@ -1,0 +1,13 @@
+.header-icon {
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--primary-text-color);
+
+  &:hover .linknav,
+  &:focus .linknav {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}

@@ -1,0 +1,26 @@
+.about {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  padding-left: 0px;
+}
+.list + .list {
+  margin-left: 30px;
+}
+.plist {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 270px;
+  color: var(--primary-text-color);
+}
+.headlines {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--primary-heading-color);
+  font-weight: 700;
+  margin-top: 0px;
+
+  margin-bottom: 10px;
+}

@@ -1,0 +1,17 @@
+.link {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--secondary-background-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

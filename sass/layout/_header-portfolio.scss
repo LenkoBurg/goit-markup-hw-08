@@ -1,0 +1,31 @@
+.menu__linkp {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--secondary-background-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.menu__linkp-main {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
