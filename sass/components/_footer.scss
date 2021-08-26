@@ -3,10 +3,38 @@
   padding-bottom: 60px;
   padding-top: 60px;
 }
-
-.footer__flex {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer__flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__flex {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__flex {
+    align-items: baseline;
+  }
+}
+.footer-nav {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    text-align: left;
+    margin: 0;
+  }
 }
 .footer__address {
   margin-bottom: 0px;
@@ -23,12 +51,40 @@
     color: var(--accent-color);
   }
 }
-.footer__list {
-  margin-top: 9px;
+.footer-list {
+  padding-left: 0px;
+  margin: 0px;
+  font-style: normal;
+}
+.footer__list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer__social {
-  margin-left: 70px;
-  margin-right: 93px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__social {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-left: 70px;
+    margin-right: 93px;
+    text-align: left;
+  }
+}
+.footer__ul-flex {
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__ul-flex {
+    justify-content: left;
+  }
 }
 .footer__social-h {
   font-weight: 700;
@@ -39,20 +95,11 @@
   margin-bottom: 20px;
   color: var(--secondary-text-color);
 }
-.footer__ul-flex {
-  display: flex;
-  margin: 0%;
-  padding: 0%;
-}
-.footer-list {
-  padding-left: 0px;
-  margin: 0px;
-  font-style: normal;
-}
+
 .footer__linknav {
   font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
+  line-height: 24px;
+  font-weight: 400;
   text-decoration: none;
   list-style: none;
   color: rgba(255, 255, 255, 0.6);
@@ -64,7 +111,12 @@
     color: var(--accent-color);
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .footer__linknav {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 .footer__social-list + .footer__social-list {
   margin-left: 10px;
 }
@@ -87,4 +139,9 @@
 
 .footer__social-icon {
   fill: var(--secondary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .tablet {
+    display: flex;
+  }
 }
