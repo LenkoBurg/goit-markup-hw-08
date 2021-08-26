@@ -1,12 +1,16 @@
 .menu-contact {
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-  margin: 0px;
-  margin-left: auto;
-
-  &.menu-contact__list + .menu-contact__list {
-    margin-left: 50px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .menu-contact {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin: 0px;
+    margin-left: auto;
+    &.menu-contact__list + .menu-contact__list {
+      margin-left: 50px;
+    }
   }
 }
 .menu-contact__link {
