@@ -1,13 +1,3 @@
-.bloks {
-  height: 120px;
-  display: flex;
-  background: var(--primary-bacground-color);
-
-  border-radius: 4px;
-  margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
-}
 .main-title {
   background: #c4c4c4;
   color: var(--secondary-text-color);
@@ -27,8 +17,14 @@
 .title {
   margin-bottom: 30px;
   margin-top: 0px;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 42px;
   font-weight: 900;
   letter-spacing: 0.06em;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 <body class="body">
     <!-- header -->
-   <header class="header-box">
+   <!-- <header class="header-box">
        <div class="container flex">     
        <nav class="flex"><a href="" class="logo" lang="en">
         <span class="web">Web</span>Studio</a>
@@ -39,13 +39,13 @@ info@devstudio.com</a></li>
         
     </ul>
     </div>
-</header>
+</header> -->
 
 
 <main>
     <!-- ===========HERO============== -->
 
-    <section class="main-title">
+    <section class="main-title section">
         <div class="container">
         <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА </h1>
         <button type="button" class="button" data-modal-open>Заказать услугу</button>
@@ -58,17 +58,17 @@ info@devstudio.com</a></li>
 <div class="container">
 
     <ul class="about">
-        <li class="list"> <div class="bloks"> <svg width="70" height="70"><use href="./images/icons/sprite.svg#icon-antenna1"></use></svg>
+        <li class="list-about"> <div class="bloks"> <svg width="70" height="70"><use href="./images/icons/sprite.svg#icon-antenna1"></use></svg>
 </div><h3 class="headlines">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
            <p class="plist">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
-            <li class="list"> <div class="bloks">
+            <li class="list-about"> <div class="bloks">
 <svg width="70" height="70"><use href="./images/icons/sprite.svg#icon-clock2"></use></svg>
 </div><h3 class="headlines">ПУНКТУАЛЬНОСТЬ</h3>
                <p class="plist">Задача организации, в особенности же рамки и место обучения кадроввлечет за собой.</p></li>
-                <li class="list"> <div class="bloks"><svg width="70" height="70"><use href="./images/icons/sprite.svg#icon-diagram3" ></use></svg>
+                <li class="list-about"> <div class="bloks"><svg width="70" height="70"><use href="./images/icons/sprite.svg#icon-diagram3" ></use></svg>
 </div><h3 class="headlines">ПЛАНИРОВАНИЕ</h3>
                    <p class="plist"> Равным образом консультация сшироким активом в значительной степени обуславливает.</p></li>
-                    <li class="list"> <div class="bloks"><svg width="70" height="70"><use href="./images/icons/sprite.svg#icon-astronaut4"></use></svg>
+                    <li class="list-about"> <div class="bloks"><svg width="70" height="70"><use href="./images/icons/sprite.svg#icon-astronaut4"></use></svg>
 </div><h3 class="headlines">СОВРЕМЕННЫЕ ТЕХНОГОГИИ</h3>
                        <p class="plist"> Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
     </ul>
@@ -92,8 +92,12 @@ info@devstudio.com</a></li>
         <h2 class="main-headlines-bot">Наша команда</h2>
         <ul class="all-employee">
             <li class="employee">
-                
-                <img src="./images/developer1.jpg" width="270" height="260" alt="Product Designer">
+                <picture>
+                    <source srcset="./images/developer1.jpg" media="min-width: 1200px">
+                    <source srcset="./images/developer-tablet1.jpg" media="min-width: 768px">
+                    <source srcset="./images/developer-phone1.jpg" media="min-width: 320px">
+                <img src="./images/developer1.jpg" alt="Product Designer" class="img-developer">
+                </picture>
                 <div class="cards-work"><h3 class="workers">Игорь Демьяненко</h3>
        <p class="positions">Product Designer</p><ul class="box-icons"><li class="social-link" ><a class="social-link-team" href=""><svg class="social-icon-team" height="20" width="20"><use href="./images/icons/sprite.svg#icon-instagram1"></use></svg></a></li>
     <li  class="social-link"><a href="" class="social-link-team"><svg class="social-icon-team" height="20" width="20"><use href="./images/icons/sprite.svg#icon-twitter2"></use></svg></a></li>
@@ -103,7 +107,12 @@ info@devstudio.com</a></li>
 </li>
 
         <li class="employee">
-            <img src="./images/developer2.jpg" width="270" height="260" alt="Frontend Developer">
+        <picture>
+            <source srcset="./images/developer2.jpg" media="min-width: 1200px">
+            <source srcset="./images/developer-tablet2.jpg" media="min-width: 768px">
+            <source srcset="./images/developer-phone2.jpg" media="min-width: 320px">
+            <img src="./images/developer2.jpg" alt="Product Designer" class="img-developer">
+        </picture>
             <div class="cards-work">
           <h3 class="workers">Ольга Репина</h3><p class="positions">Frontend Developer</p>
           <ul class="box-icons">
@@ -116,7 +125,12 @@ info@devstudio.com</a></li>
     </li>
         <li class="employee">
             
-                <img src="./images/developer3.jpg" width="270" height="260" alt="Marketing">
+            <picture>
+                <source srcset="./images/developer3.jpg" media="min-width: 1200px">
+                <source srcset="./images/developer-tablet3.jpg" media="min-width: 768px">
+                <source srcset="./images/developer-phone3.jpg" media="min-width: 320px">
+                <img src="./images/developer3.jpg" alt="Product Designer" class="img-developer">
+            </picture>
                 <div class="cards-work">
              <h3 class="workers">Николай Тарасов</h3><p class="positions">Marketing</p><ul class="box-icons">
                  <li class="social-link"><a class="social-link-team" href=""><svg class="social-icon-team" height="20" width="20">
@@ -137,7 +151,12 @@ info@devstudio.com</a></li>
 </li>
         <li class="employee">
            
-                <img src="./images/developer4.jpg" width="270" height="260" alt="UI Designer">
+                <picture>
+                    <source srcset="./images/developer4.jpg" media="min-width: 1200px">
+                    <source srcset="./images/developer-tablet4.jpg" media="min-width: 768px">
+                    <source srcset="./images/developer-phone4.jpg" media="min-width: 320px">
+                    <img src="./images/developer4.jpg" alt="Product Designer" class="img-developer">
+                </picture>
                 <div class="cards-work">
               <h3 class="workers">Михаил Ермаков</h3><p class="positions">UI Designer</p><ul class="box-icons">
                   <li class="social-link"><a class="social-link-team" href=""><svg class="social-icon-team" height="20" width="20">
@@ -159,7 +178,7 @@ info@devstudio.com</a></li>
         </div>
     </section>
     <!-- ============================CLIENTS============================ -->
-    <section class="section">
+    <!-- <section class="section">
         <div class="container">
             <h2 class="hclient">Постоянные клиенты</h2>
 <ul class="client-flex"><li class="client-list"><a class="client-link" href=""><svg class="client-icon" width="106" height="60"><use href="./images/icons/sprite2.svg#icon-group" ></use></svg></a></li>
@@ -171,10 +190,10 @@ info@devstudio.com</a></li>
     
 
         </div>
-    </section>
+    </section> -->
 </main>
 <!-- /* ==================FOOTER====================== */ -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__flex">
             
             <div>
@@ -210,7 +229,7 @@ info@devstudio.com</a></li>
     </span>
 </form>
 </div>
-    </footer>
+    </footer> -->
 <!-- ===================END FOOTER================ -->
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
