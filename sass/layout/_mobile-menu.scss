@@ -79,21 +79,31 @@
     color: var(--accent-color);
   }
 }
+@media screen and (max-width: 767px) {
+  .main {
+    color: var(--accent-color);
+  }
+}
+
 .mobile-menu__numb {
+  margin-bottom: 32px;
+}
+.mobile-menu__link-numb {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  margin-bottom: 32px;
 }
 .mobile-menu__mail {
+  margin-bottom: 64px;
+}
+.mobile-menu__link-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-bottom: 64px;
 }
 .mobile__menu-social {
   display: flex;
