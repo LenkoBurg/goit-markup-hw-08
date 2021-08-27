@@ -788,12 +788,14 @@ p {
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
-  width: 200px;
-  height: 50px;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin: 0 auto;
   left: 700px;
   top: 430px;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1351,7 +1353,7 @@ p {
   position: relative;
   padding: 40px;
   border-radius: 4px;
-  background-color: var(--primary-bacground-color);
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -1368,7 +1370,6 @@ p {
     height: 581px;
     padding: 40px;
     border-radius: 4px;
-    background-color: var(--primary-bacground-color);
   }
 }
 
@@ -1424,7 +1425,7 @@ p {
 }
 
 .modal-form__input {
-  background-color: var(--primary-bacground-color);
+  background-color: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 100%;
