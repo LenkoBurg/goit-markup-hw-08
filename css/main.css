@@ -1356,13 +1356,6 @@ p {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .modal {
-    width: 96vw;
-    height: 96vh;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
     position: relative;
