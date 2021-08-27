@@ -1225,13 +1225,13 @@ p {
 }
 
 .card__list {
-  width: 354px;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .card__list {
     flex-basis: calc(100% / 2 - 30px);
+    width: 354px;
     margin-left: 30px;
   }
 }
@@ -1262,6 +1262,12 @@ p {
 .card__wrapper {
   position: relative;
   overflow: hidden;
+}
+
+.img-markt {
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 .card__overlay {
